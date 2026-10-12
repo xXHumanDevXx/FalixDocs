@@ -1,0 +1,26 @@
+name: FalixDocs
+version: 1.0.0
+main: de.falixdocs.FalixDocs
+api-version: '1.21'
+description: Hilfe, Links und Über-Seite, komplett per config bearbeitbar
+
+commands:
+  help:
+    description: Hilfe zu den Befehlen anzeigen
+    usage: /help
+  links:
+    description: Wichtige Links anzeigen (anklickbar)
+    usage: /links
+  about:
+    description: Informationen über den Server anzeigen
+    usage: /about
+  falixdocs:
+    description: Plugin verwalten
+    usage: /falixdocs reload
+    aliases: [fdocs]
+    permission: falixdocs.admin
+
+permissions:
+  falixdocs.admin:
+    description: Darf die Config neu laden
+    default: op

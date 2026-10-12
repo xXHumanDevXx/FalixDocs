@@ -1,0 +1,65 @@
+# =====================================================================
+#  FalixDocs - Inhalte bearbeiten
+#  Farben mit &-Codes. Platzhalter: {player} {online} {max}
+#  Nach Änderungen: /falixdocs reload
+#
+#  Jede Zeile unter "lines" ist eine Zeile im Chat.
+#  Leere Zeile = "" (zwei Anführungszeichen).
+# =====================================================================
+
+# ---------------------------------------------------------------------
+#  /help
+# ---------------------------------------------------------------------
+help:
+  title: "&8&m                      &r &b&lHilfe &8&m                      "
+  lines:
+    - "&7Hallo &f{player}&7, hier sind die wichtigsten Befehle:"
+    - ""
+    - "&b/help &8- &7Diese Hilfe"
+    - "&b/links &8- &7Wichtige Links zu Discord, Website und Co."
+    - "&b/about &8- &7Infos über den Server"
+    - "&b/home &8- &7Zu deinem Home teleportieren"
+    - "&b/warp &8- &7Warp-Menü öffnen"
+    - "&b/tpa <Spieler> &8- &7Teleport-Anfrage senden"
+    - "&b/party &8- &7Party verwalten"
+    - ""
+    - "&7Probleme? Schreib im Support-Kanal auf Discord."
+
+# ---------------------------------------------------------------------
+#  /links  (anklickbar, Maus drüber zeigt die Adresse)
+#  Eintrag: name, url, description
+# ---------------------------------------------------------------------
+links:
+  title: "&8&m                      &r &b&lLinks &8&m                      "
+  entries:
+    - name: "Discord"
+      url: "https://discord.gg/DEIN-LINK"
+      description: "Community, Support und Ankündigungen"
+    - name: "Website"
+      url: "https://deine-website.de"
+      description: "Regeln, Infos und Shop"
+    - name: "YouTube"
+      url: "https://youtube.com/@DEIN-KANAL"
+      description: "Trailer und Videos"
+
+# ---------------------------------------------------------------------
+#  /about
+# ---------------------------------------------------------------------
+about:
+  title: "&8&m                      &r &b&lÜber XCraft &8&m                      "
+  lines:
+    - "&7Willkommen auf &b&lXCraft&7!"
+    - ""
+    - "&7Aktuell sind &a{online}&7 von &a{max}&7 Spielern online."
+    - "&7Wir wünschen dir viel Spaß und eine gute Zeit."
+    - ""
+    - "&7Bei Fragen hilft dir das Team gerne weiter."
+
+# ---------------------------------------------------------------------
+#  Nachrichten
+# ---------------------------------------------------------------------
+messages:
+  prefix: "&8[&bFalixDocs&8] &7"
+  usage: "{prefix}&cBenutzung: &f{usage}"
+  no-permission: "{prefix}&cDazu hast du keine Berechtigung."
+  reloaded: "{prefix}&aKonfiguration neu geladen."
